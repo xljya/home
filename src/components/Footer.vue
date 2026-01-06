@@ -19,15 +19,12 @@
             {{ config.author }}
           </a>
         </span>
-        <!-- 站点备案（已注释掉）  -->
-        <!--
-        <span>
+        <span v-if="siteIcp">
           &amp;
-          <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
+          <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">
             {{ siteIcp }}
           </a>
         </span>
-        -->
       </div>
       <div v-else class="lrc">
         <Transition name="fade" mode="out-in">
