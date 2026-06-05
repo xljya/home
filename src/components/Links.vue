@@ -19,16 +19,16 @@
       }"
       :mousewheel="true"
     >
-      <SwiperSlide v-for="site in siteLinksList" :key="site">
+      <SwiperSlide v-for="(site, siteIndex) in siteLinksList" :key="siteIndex">
         <el-row class="link-all" :gutter="20">
-          <el-col v-for="(item, index) in site" :span="8" :key="item">
+          <el-col v-for="(item, index) in site" :span="8" :key="item.link">
             <div
               class="item cards"
               :style="index < 3 ? 'margin-bottom: 20px' : null"
               @click="jumpLink(item)"
             >
               <Icon size="26">
-                <component :is="siteIcon[item.icon]" />
+                <component :is="siteIcon[item.icon] || Link" />
               </Icon>
               <span class="name text-hidden">{{ item.name }}</span>
             </div>
@@ -43,7 +43,19 @@
 <script setup>
 import { Icon } from "@vicons/utils";
 // 可前往 https://www.xicons.org 自行挑选并在此处引入
-import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode } from "@vicons/fa"; // 注意使用正确的类别
+import {
+  Cloud,
+  Folder,
+  GitBranch,
+  Heartbeat,
+  Link,
+  Rss,
+  Server,
+  Terminal,
+  Tools,
+  UserCircle,
+} from "@vicons/tabler";
+import { Blogger } from "@vicons/fa";
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper/modules";
@@ -63,13 +75,17 @@ const siteLinksList = computed(() => {
 
 // 网站链接图标
 const siteIcon = {
-  Blog,
+  Blogger,
   Cloud,
-  CompactDisc,
-  Compass,
-  Book,
-  Fire,
-  LaptopCode,
+  Folder,
+  GitBranch,
+  Heartbeat,
+  Link,
+  Rss,
+  Server,
+  Terminal,
+  Tools,
+  UserCircle,
 };
 
 // 链接跳转
@@ -80,10 +96,6 @@ const jumpLink = (data) => {
     window.open(data.link, "_blank");
   }
 };
-
-onMounted(() => {
-  console.log(siteLinks);
-});
 </script>
 
 <style lang="scss" scoped>

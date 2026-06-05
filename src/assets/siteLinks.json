@@ -1,11 +1,46 @@
 [
   {
-    "icon": "Blog",
-    "name": "博客",
+    "icon": "Blogger",
+    "name": "Blog",
     "link": "https://blog.liucf.com/"
   },
   {
-    "icon": "LaptopCode",
+    "icon": "UserCircle",
+    "name": "About Me",
+    "link": "https://me.liucf.com/"
+  },
+  {
+    "icon": "Terminal",
+    "name": "Linux Commands",
+    "link": "https://lxcmd.liucf.com/"
+  },
+  {
+    "icon": "Tools",
+    "name": "IT Tools",
+    "link": "https://it-tools.liucf.com/"
+  },
+  {
+    "icon": "Folder",
+    "name": "OpenList",
+    "link": "https://openlist.liucf.com/"
+  },
+  {
+    "icon": "Cloud",
+    "name": "Cloudreve",
+    "link": "https://cloudreve.liucf.com/"
+  },
+  {
+    "icon": "GitBranch",
+    "name": "Code Repository",
+    "link": "https://git.liucf.com/"
+  },
+  {
+    "icon": "Heartbeat",
+    "name": "Site Status",
+    "link": "https://status.liucf.com/status"
+  },
+  {
+    "icon": "Server",
     "name": "Server",
     "link": "https://nezha.liucf.com/"
   }
