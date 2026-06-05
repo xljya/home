@@ -5,17 +5,17 @@
     "link": "https://blog.liucf.com/"
   },
   {
-    "icon": "UserCircle",
+    "icon": "IdBadge",
     "name": "About Me",
     "link": "https://me.liucf.com/"
   },
   {
     "icon": "Terminal",
-    "name": "Linux Commands",
+    "name": "Linux Cmd",
     "link": "https://lxcmd.liucf.com/"
   },
   {
-    "icon": "Tools",
+    "icon": "Code",
     "name": "IT Tools",
     "link": "https://it-tools.liucf.com/"
   },
@@ -31,7 +31,7 @@
   },
   {
     "icon": "GitBranch",
-    "name": "Code Repository",
+    "name": "Code Repo",
     "link": "https://git.liucf.com/"
   },
   {

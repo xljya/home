@@ -45,15 +45,14 @@ import { Icon } from "@vicons/utils";
 // 可前往 https://www.xicons.org 自行挑选并在此处引入
 import {
   Cloud,
+  Code,
   Folder,
   GitBranch,
   Heartbeat,
+  IdBadge,
   Link,
-  Rss,
   Server,
   Terminal,
-  Tools,
-  UserCircle,
 } from "@vicons/tabler";
 import { Blogger } from "@vicons/fa";
 import { mainStore } from "@/store";
@@ -77,15 +76,14 @@ const siteLinksList = computed(() => {
 const siteIcon = {
   Blogger,
   Cloud,
+  Code,
   Folder,
   GitBranch,
   Heartbeat,
+  IdBadge,
   Link,
-  Rss,
   Server,
   Terminal,
-  Tools,
-  UserCircle,
 };
 
 // 链接跳转
