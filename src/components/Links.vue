@@ -49,12 +49,11 @@ import {
   Folder,
   GitBranch,
   Heartbeat,
-  IdBadge,
   Link,
   Server,
   Terminal,
 } from "@vicons/tabler";
-import { Blogger } from "@vicons/fa";
+import { Blogger, IdBadge as FaIdBadge } from "@vicons/fa";
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper/modules";
@@ -80,7 +79,7 @@ const siteIcon = {
   Folder,
   GitBranch,
   Heartbeat,
-  IdBadge,
+  IdBadge: FaIdBadge,
   Link,
   Server,
   Terminal,
